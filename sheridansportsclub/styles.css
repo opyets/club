@@ -1,0 +1,207 @@
+header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 80px;
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav{
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 30px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+}
+
+.page_content {
+    max-width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: span 12;
+}
+
+
+.landing_hero {
+    text-align: center;
+    gap: 48px;
+    padding: 64px;
+    grid-column: span 12;
+}
+
+.hero_text {
+    text-align: center;
+    gap: 32px;
+}
+
+.images {
+    width: 100%;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.landing_hero img {
+    width: 100%;
+}
+
+.body_group {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 64px;
+    align-items: center;
+    padding: 64px;
+}
+
+.body_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.body_image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.schedule {
+    margin-bottom: 32px;
+    padding: 32px;
+}
+
+.schedule_events {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.top_text{
+    padding: 64px;
+}
+
+.sport {
+    margin-bottom: 64px;
+}
+
+.sports img {
+    width: 64px;
+    height: auto;
+}
+
+.sports_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 64px;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.about_content {
+    text-align: center;
+    gap: 64px;
+    align-items: center;
+    padding: 64px;
+}
+
+.about_image {
+    width: 100%;
+}
+
+.photo_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 32px;
+}
+
+.grid_img {
+    height: 100%;
+    width: 100%;
+}
+
+.grid_img_1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+.achievements_container {
+    text-align: center;
+}
+
+.achievements_h2 {
+    padding-bottom: 32px;
+}
+
+.stats_container{
+    justify-content: center;
+    display: flex;
+    gap: 64px;
+}
+
+@media (max-width: 900px) {
+    .body_group {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 12px;
+    }
+
+    .body_text p {
+        max-width: 624px;
+    }
+
+    .schedule_events {
+        grid-template-columns: 1fr;
+    }
+
+    .photo_grid {
+        grid-template-columns: auto;
+    }
+
+    .sports_grid {
+        grid-template-columns: auto;
+    }
+
+    .landing_hero {
+        padding: 12px;
+    }
+
+    header{
+        gap: 24px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    
+
+}
